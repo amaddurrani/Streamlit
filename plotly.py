@@ -46,10 +46,7 @@ fig.add_trace(go.Scatter(x=random_x, y=random_y1,
 fig.add_trace(go.Scatter(x=random_x, y=random_y2,
                     mode='markers', name='markers'))
 st.plotly_chart(fig)
-
-
-
-
+#Titanic Dataset
 df= pd.read_csv("titanic_data.csv")
 
 df['Age'].fillna(int(df["Age"].mean()),inplace=True)
